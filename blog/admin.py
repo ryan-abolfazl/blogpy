@@ -19,7 +19,7 @@ admin.site.register(Article, ArticleAdmin)
 
 
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ('title', 'created_at')
+    list_display = ('title',)
 
 
 admin.site.register(Category,CategoryAdmin)
