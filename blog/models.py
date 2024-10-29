@@ -28,7 +28,7 @@ class Article(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, blank=False)
     category = models.ForeignKey('Category', on_delete=models.CASCADE)
     author = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
-
+    promote = models.BooleanField(default=False)
 
 class Category(models.Model):
     title = models.CharField(max_length=128, null=False, blank=False)
