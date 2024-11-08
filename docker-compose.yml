@@ -3,7 +3,7 @@
 services:
   blogpy:
     build:
-      content: .
+      context: .
       dockerfile: Dockerfile
     volumes:
       - .:/blogpy
