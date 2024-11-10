@@ -13,4 +13,4 @@ RUN pip install -r requirements.txt
 
 RUN python manage.py collectstatic --no-input
 
-CMD ["gunicorn", "--chdir", "--bind", ":8000", "blogpy.wsgi:application"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "blogpy.wsgi:application"]
